@@ -1,0 +1,5 @@
+
+Property Annotate On The PDF
+    And I Create Post Request Navigation on Dashboard    SSI    SearchBuildings
+
+    And I Create Post Request Annotate On The PDF    SSI

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a7bf17f-412e-449d-81a2-21225e4107af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dashboard/TC_01DashBoard.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dashboard/test.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmailBodyDisabled.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Global/NewResource.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Global/Resource.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Global/Resourcebackup1782022.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login/TC_01Login.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login/TC_02Login.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Run/CompanyAdmin.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Run/CompanyManager.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Run/LimitedUser.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Run/SSIEmployee.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Run/User.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Run/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excel_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myFile.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ok.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oneee.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/return.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testAPI.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/two.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uiui.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpa_framework-0.0.0.0.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpa_framework-0.0.0.0.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpa_framework-0.0.0.0.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpa_framework-0.0.0.0.1.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpa_framework-0.0.0.0.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpa_framework/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpaframework_excel-0.1.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpaframework_excel-0.1.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpaframework_excel-0.1.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpaframework_excel-0.1.0.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpaframework_excel-0.1.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/rpaframework_excel/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/STS_API_Automation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/STS_API_Automation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/_distutils_hack/override.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/distutils-precedence.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl-3.0.10.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl-3.0.10.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/cell/read_only.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/cell/read_only.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/_3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/_3d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/bar_chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/bar_chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/descriptors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/descriptors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/error_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/error_bar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/picture.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/picture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/radar_chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/radar_chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/series_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/series_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/shapes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/shapes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/stock_chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chart/stock_chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chartsheet/custom.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chartsheet/custom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chartsheet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/chartsheet/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/comments/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/comments/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/comments/author.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/comments/author.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/comments/comment_sheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/comments/comment_sheet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/comments/shape_writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/comments/shape_writer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/compat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/compat/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/compat/numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/compat/numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/compat/singleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/compat/singleton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/compat/strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/compat/strings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/descriptors/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/descriptors/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/effect.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/effect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/fill.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/fill.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/relation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/relation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/xdr.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/drawing/xdr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/formula/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/formula/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/packaging/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/packaging/interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/packaging/manifest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/packaging/manifest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/packaging/relationship.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/packaging/relationship.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/pivot/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/pivot/fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/reader/drawings.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/reader/drawings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/reader/workbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/reader/workbook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/styles/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/styles/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/styles/cell_style.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/styles/cell_style.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/styles/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/styles/table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/utils/cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/utils/cell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/utils/datetime.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/utils/datetime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/utils/escape.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/utils/escape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/defined_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/defined_name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/external_link/external.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/external_link/external.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/smart_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/smart_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/web.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/web.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/workbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/workbook/workbook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/_read_only.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/_read_only.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/_writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/_writer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/cell_range.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/cell_range.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/drawing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/drawing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/page.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/protection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/worksheet/protection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/writer/theme.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/writer/theme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/xml/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/openpyxl/xml/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/importlib_resources/readers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/jaraco/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/jaraco/context.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/packaging/markers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/packaging/markers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/packaging/requirements.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/packaging/requirements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/pyparsing/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/pyparsing/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/pyparsing/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/pyparsing/testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/pyparsing/unicode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-63.1.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-63.1.0.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/_collections.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/_functools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/archive_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/bcppcompiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/command/_framework_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/command/bdist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/command/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/command/clean.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/command/install_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/command/install_lib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/command/install_scripts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/debug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/file_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_distutils/text_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/importlib_metadata/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/jaraco/functools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/jaraco/text/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/packaging/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/packaging/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/packaging/_musllinux.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/packaging/specifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/packaging/specifiers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/pyparsing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/pyparsing/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/pyparsing/diagram/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/pyparsing/helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/pyparsing/testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/tomli/_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/typing_extensions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_vendor/zipp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/bdist_egg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/bdist_egg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/build_ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/build_ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/py36compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/py36compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/sdist.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/sdist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/setopt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/setopt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/command/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/config/_validate_pyproject/fastjsonschema_exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/config/setupcfg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/extension.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/extension.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/extern/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/extern/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/installer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/logging.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/package_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/package_index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/sandbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/sandbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/windows_support.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/windows_support.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2NGnBEBaSWarm6W0BZFsrw71fbM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.test.executor": "Run",
+    "Robot Framework.run [Get UK Institution].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/pratap",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="Optionthetadata" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="STS_API_Automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python course" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python course/Optionthetadata.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="techAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="STS_API_Automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python course" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python course/techAnalysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="STS_API_Automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="STS_API_Automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python course" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python course/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tutorial1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="STS_API_Automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python course" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python course/tutorial1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.tutorial1" />
+        <item itemvalue="Python.Optionthetadata" />
+        <item itemvalue="Python.techAnalysis" />
+        <item itemvalue="Python.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a7bf17f-412e-449d-81a2-21225e4107af" name="Changes" comment="" />
+      <created>1679299152322</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679299152322</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="robot-line">
+          <url>file://$PROJECT_DIR$/Global/Resource.robot</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20220803 08:12:40.384" rpa="false">
+<suite id="s1" name="Login Feature" source="C:\STS_API_Automation\Run\Login_Feature.robot">
+<test id="s1-t1" name="LoginAdmin">
+<kw name="Given I Create Post Request For Login And Verify Response" library="Resource">
+<kw name="Get Cell Value" library="excel_1">
+<arguments>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${API_Base_Endpoint}</var>
+</assign>
+<msg timestamp="20220803 08:12:44.654" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'TestData/TestData.xlsx'</msg>
+<status status="FAIL" starttime="20220803 08:12:44.632" endtime="20220803 08:12:44.655"></status>
+</kw>
+<status status="FAIL" starttime="20220803 08:12:44.631" endtime="20220803 08:12:44.656"></status>
+</kw>
+<status status="FAIL" starttime="20220803 08:12:44.630" endtime="20220803 08:12:44.657" critical="yes">FileNotFoundError: [Errno 2] No such file or directory: 'TestData/TestData.xlsx'</status>
+</test>
+<test id="s1-t2" name="LoginLimitedUser">
+<kw name="Given I Create Post Request For Login With Limited User And Verify Response" library="Resource">
+<kw name="Get Cell Value" library="excel_1">
+<arguments>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${API_Base_Endpoint}</var>
+</assign>
+<msg timestamp="20220803 08:12:44.665" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'TestData/TestData.xlsx'</msg>
+<status status="FAIL" starttime="20220803 08:12:44.664" endtime="20220803 08:12:44.665"></status>
+</kw>
+<status status="FAIL" starttime="20220803 08:12:44.663" endtime="20220803 08:12:44.665"></status>
+</kw>
+<status status="FAIL" starttime="20220803 08:12:44.662" endtime="20220803 08:12:44.667" critical="yes">FileNotFoundError: [Errno 2] No such file or directory: 'TestData/TestData.xlsx'</status>
+</test>
+<test id="s1-t3" name="LoginUser">
+<kw name="Given I Create Post Request For Login With User And Verify Response" library="Resource">
+<kw name="Get Cell Value" library="excel_1">
+<arguments>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${API_Base_Endpoint}</var>
+</assign>
+<msg timestamp="20220803 08:12:44.675" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'TestData/TestData.xlsx'</msg>
+<status status="FAIL" starttime="20220803 08:12:44.673" endtime="20220803 08:12:44.675"></status>
+</kw>
+<status status="FAIL" starttime="20220803 08:12:44.673" endtime="20220803 08:12:44.675"></status>
+</kw>
+<status status="FAIL" starttime="20220803 08:12:44.670" endtime="20220803 08:12:44.676" critical="yes">FileNotFoundError: [Errno 2] No such file or directory: 'TestData/TestData.xlsx'</status>
+</test>
+<test id="s1-t4" name="LoginCompanyAdmin">
+<kw name="Given I Create Post Request For Login With Company Admin And Verify Response" library="Resource">
+<kw name="Get Cell Value" library="excel_1">
+<arguments>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${API_Base_Endpoint}</var>
+</assign>
+<msg timestamp="20220803 08:12:44.684" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'TestData/TestData.xlsx'</msg>
+<status status="FAIL" starttime="20220803 08:12:44.683" endtime="20220803 08:12:44.684"></status>
+</kw>
+<status status="FAIL" starttime="20220803 08:12:44.682" endtime="20220803 08:12:44.685"></status>
+</kw>
+<status status="FAIL" starttime="20220803 08:12:44.681" endtime="20220803 08:12:44.685" critical="yes">FileNotFoundError: [Errno 2] No such file or directory: 'TestData/TestData.xlsx'</status>
+</test>
+<test id="s1-t5" name="LoginCompanyManager">
+<kw name="Given I Create Post Request For Login With Company Manager And Verify Response" library="Resource">
+<kw name="Get Cell Value" library="excel_1">
+<arguments>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${API_Base_Endpoint}</var>
+</assign>
+<msg timestamp="20220803 08:12:44.696" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'TestData/TestData.xlsx'</msg>
+<status status="FAIL" starttime="20220803 08:12:44.693" endtime="20220803 08:12:44.696"></status>
+</kw>
+<status status="FAIL" starttime="20220803 08:12:44.692" endtime="20220803 08:12:44.696"></status>
+</kw>
+<status status="FAIL" starttime="20220803 08:12:44.691" endtime="20220803 08:12:44.698" critical="yes">FileNotFoundError: [Errno 2] No such file or directory: 'TestData/TestData.xlsx'</status>
+</test>
+<doc>This Document include Automation script scenarios for Login of stevensons website through API</doc>
+<status status="FAIL" starttime="20220803 08:12:40.387" endtime="20220803 08:12:44.701"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5">Critical Tests</stat>
+<stat pass="0" fail="5">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="5" id="s1" name="Login Feature">Login Feature</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

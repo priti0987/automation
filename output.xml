@@ -1,141 +1,758 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.1 on win32)" generated="20220713 14:05:33.346" rpa="false" schemaversion="3">
-<suite id="s1" name="TC Prelogin" source="C:\STS_API_Automation\PreLogin\TC_Prelogin.robot">
-<test id="s1-t1" name="TC001_Get_Request_forPreLogin using https://uat-myaccess.stevensonsystems.com" line="13">
-<kw name="Mykeywork">
-<arg>https://uat-myaccess.stevensonsystems.com</arg>
-<arg>/api/Home/GetReleaseVersion</arg>
-<arg>200</arg>
-<arg>200</arg>
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20230531 15:24:44.556" rpa="false" schemaversion="3">
+<suite id="s1" name="User" source="C:\STS_API_Automation\Run\User.robot">
+<test id="s1-t1" name="DashBoardEditUser" line="8">
+<kw name="I Create Post Request For Login And Verify Response" library="Resource" type="SETUP">
+<arg>User</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${role}</var>
+<arg>${AccountRole}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230531 15:24:46.497" level="INFO">${role} = User</msg>
+<status status="PASS" starttime="20230531 15:24:46.497" endtime="20230531 15:24:46.498"/>
+</kw>
+<kw name="get API Values" library="Resource">
+<kw name="Get Cell Value" library="excel_1">
+<var>${API_Base_Endpoint}</var>
+<arg>${dataFile}</arg>
+<arg>${API_Base_Endpoint_Sheet}</arg>
+<arg>2</arg>
+<arg>1</arg>
+<msg timestamp="20230531 15:24:46.555" level="INFO">${API_Base_Endpoint} = https://qa.truspace.com</msg>
+<status status="PASS" starttime="20230531 15:24:46.498" endtime="20230531 15:24:46.555"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${API_Base_Endpoint}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230531 15:24:46.556" level="INFO">${API_Base_Endpoint} = https://qa.truspace.com</msg>
+<status status="PASS" starttime="20230531 15:24:46.555" endtime="20230531 15:24:46.556"/>
+</kw>
+<status status="PASS" starttime="20230531 15:24:46.498" endtime="20230531 15:24:46.556"/>
+</kw>
+<kw name="Get Cell Value" library="excel_1">
+<var>${End_Points}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>2</arg>
+<msg timestamp="20230531 15:24:46.606" level="INFO">${End_Points} = /api/account/login</msg>
+<status status="PASS" starttime="20230531 15:24:46.556" endtime="20230531 15:24:46.606"/>
+</kw>
+<if>
+<branch type="IF" condition="'${role}'=='Company Manager'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>11</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:46.606" endtime="20230531 15:24:46.606"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:46.606" endtime="20230531 15:24:46.606"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='SSIEmployee'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>12</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:46.607" endtime="20230531 15:24:46.607"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:46.606" endtime="20230531 15:24:46.607"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='SSI'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>7</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:46.607" endtime="20230531 15:24:46.607"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:46.607" endtime="20230531 15:24:46.607"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='Company Admin'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>10</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:46.607" endtime="20230531 15:24:46.608"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:46.607" endtime="20230531 15:24:46.608"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='User'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>9</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230531 15:24:46.608" level="INFO">${row} = 9</msg>
+<status status="PASS" starttime="20230531 15:24:46.608" endtime="20230531 15:24:46.608"/>
+</kw>
+<status status="PASS" starttime="20230531 15:24:46.608" endtime="20230531 15:24:46.608"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='Limited User'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>8</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:46.608" endtime="20230531 15:24:46.608"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:46.608" endtime="20230531 15:24:46.608"/>
+</branch>
+<status status="PASS" starttime="20230531 15:24:46.606" endtime="20230531 15:24:46.608"/>
+</if>
+<kw name="Get Cell Value" library="excel_1">
+<var>${Username}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>${row}</arg>
+<arg>3</arg>
+<msg timestamp="20230531 15:24:46.658" level="INFO">${Username} = pore.priti@gmail.com</msg>
+<status status="PASS" starttime="20230531 15:24:46.609" endtime="20230531 15:24:46.658"/>
+</kw>
+<kw name="Get Cell Value" library="excel_1">
+<var>${Password}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<msg timestamp="20230531 15:24:46.711" level="INFO">${Password} = userPassword@1</msg>
+<status status="PASS" starttime="20230531 15:24:46.658" endtime="20230531 15:24:46.711"/>
+</kw>
+<kw name="Encode My Data" library="excel_1">
+<var>${Username}</var>
+<arg>${Username}</arg>
+<msg timestamp="20230531 15:24:46.712" level="INFO">${Username} = cG9yZS5wcml0aUBnbWFpbC5jb20=</msg>
+<status status="PASS" starttime="20230531 15:24:46.712" endtime="20230531 15:24:46.712"/>
+</kw>
+<kw name="Encode My Data" library="excel_1">
+<var>${Password}</var>
+<arg>${Password}</arg>
+<msg timestamp="20230531 15:24:46.712" level="INFO">${Password} = dXNlclBhc3N3b3JkQDE=</msg>
+<status status="PASS" starttime="20230531 15:24:46.712" endtime="20230531 15:24:46.712"/>
+</kw>
+<kw name="Get Cell Value" library="excel_1">
+<var>${ExpectedStatus_code}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>7</arg>
+<msg timestamp="20230531 15:24:46.762" level="INFO">${ExpectedStatus_code} = ZavantiAdmin@stevensonsystems.com</msg>
+<status status="PASS" starttime="20230531 15:24:46.712" endtime="20230531 15:24:46.762"/>
+</kw>
 <kw name="Create Session" library="RequestsLibrary">
 <arg>API_Testing</arg>
 <arg>${API_Base_Endpoint}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220713 14:05:35.861" level="INFO">Creating Session using : alias=API_Testing, url=https://uat-myaccess.stevensonsystems.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20220713 14:05:35.861" endtime="20220713 14:05:35.862"/>
+<msg timestamp="20230531 15:24:46.763" level="INFO">Creating Session using : alias=API_Testing, url=https://qa.truspace.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230531 15:24:46.762" endtime="20230531 15:24:46.763"/>
 </kw>
-<kw name="GET On Session" library="RequestsLibrary">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${body}</var>
+<arg>Username=${Username}</arg>
+<arg>Password=${Password}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230531 15:24:46.764" level="INFO">${body} = {'Username': 'cG9yZS5wcml0aUBnbWFpbC5jb20=', 'Password': 'dXNlclBhc3N3b3JkQDE='}</msg>
+<status status="PASS" starttime="20230531 15:24:46.763" endtime="20230531 15:24:46.764"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${header}</var>
+<arg>Content-type=application/json,</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230531 15:24:46.764" level="INFO">${header} = {'Content-type': 'application/json,'}</msg>
+<status status="PASS" starttime="20230531 15:24:46.764" endtime="20230531 15:24:46.764"/>
+</kw>
+<kw name="Post Request" library="RequestsLibrary">
 <var>${response}</var>
 <arg>API_Testing</arg>
 <arg>${End_Points}</arg>
-<doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20220713 14:05:37.045" level="INFO">GET Request : url=https://uat-myaccess.stevensonsystems.com/api/Home/GetReleaseVersion 
- path_url=/api/Home/GetReleaseVersion 
- headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
+<arg>data=${body}</arg>
+<arg>headers=${header}</arg>
+<doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
+<msg timestamp="20230531 15:24:46.764" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20230531 15:24:48.028" level="INFO">POST Request : url=https://qa.truspace.com/api/account/login 
+ path_url=/api/account/login 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-type': 'application/json,', 'Content-Length': '80'} 
+ body={"Username": "cG9yZS5wcml0aUBnbWFpbC5jb20=", "Password": "dXNlclBhc3N3b3JkQDE="} 
  </msg>
-<msg timestamp="20220713 14:05:37.045" level="INFO">GET Response : url=https://uat-myaccess.stevensonsystems.com/api/Home/GetReleaseVersion 
+<msg timestamp="20230531 15:24:48.029" level="INFO">POST Response : url=https://qa.truspace.com/api/account/login 
  status=200, reason=OK 
- headers={'Transfer-Encoding': 'chunked', 'Content-Type': 'application/json; charset=utf-8', 'Server': 'Kestrel', 'Strict-Transport-Security': 'max-age=2592000', 'X-Frame-Options': 'SAMEORIGIN', 'X-Powered-By': 'ASP.NET', 'Date': 'Wed, 13 Jul 2022 08:35:15 GMT'} 
- body={"statusCode":401,"message":"Unauthorize Access","result":[null,"\r\nRelease Branch MyAccess: main\r\nRelease Date MyAccess: 2022-06-24\r\n"]} 
+ headers={'Cache-Control': 'no-cache,no-store', 'Pragma': 'no-cache', 'Content-Length': '45', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'Strict-Transport-Security': 'max-age=2592000', 'Set-Cookie': '.AspNetCore.Session=CfDJ8C90wS%2Bbj%2FlLhJ5WBI2WDp3VU4NYr2TtOEELLtEe7J0FJ6OksUrCIyB2Y2JJiI29WxzCsJFzyTp6enIQzQjR%2Blrun%2F9StTU9h7GkrZWZ8wDBdcLGjDfbbSgGT9%2Fk%2FJlcsODVRNpWUs5Nx8wzzo29jgubj%2F3pqd8z8jtOaL22mDEz; path=/; samesite=lax; httponly', 'X-Powered-By': 'ASP.NET', 'Date': 'Wed, 31 May 2023 09:54:40 GMT'} 
+ body={"statusCode":400,"message":"Invalid Login!"} 
  </msg>
-<msg timestamp="20220713 14:05:37.045" level="INFO">C:\STS_API_Automation\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'uat-myaccess.stevensonsystems.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20230531 15:24:48.029" level="INFO">c:\pythonproject\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'qa.truspace.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220713 14:05:37.046" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220713 14:05:35.862" endtime="20220713 14:05:37.046"/>
+<msg timestamp="20230531 15:24:48.030" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230531 15:24:46.764" endtime="20230531 15:24:48.030"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.status_code}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220713 14:05:37.047" endtime="20220713 14:05:37.048"/>
+<kw name="To Json" library="RequestsLibrary">
+<var>${JsonObj}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<msg timestamp="20230531 15:24:48.030" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg timestamp="20230531 15:24:48.033" level="INFO">To JSON using : content={"statusCode":400,"message":"Invalid Login!"} </msg>
+<msg timestamp="20230531 15:24:48.033" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20230531 15:24:48.033" level="INFO">${JsonObj} = {'statusCode': 400, 'message': 'Invalid Login!'}</msg>
+<status status="PASS" starttime="20230531 15:24:48.030" endtime="20230531 15:24:48.033"/>
+</kw>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>${id}</var>
+<arg>${JsonObj}</arg>
+<arg>$.statusCode</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<msg timestamp="20230531 15:24:48.093" level="INFO">${id} = [400]</msg>
+<status status="PASS" starttime="20230531 15:24:48.034" endtime="20230531 15:24:48.093"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
-<var>${StrinfResCode}</var>
-<arg>${response.status_code}</arg>
+<var>${id}</var>
+<arg>${id}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220713 14:05:37.051" level="INFO">${StrinfResCode} = 200</msg>
-<status status="PASS" starttime="20220713 14:05:37.049" endtime="20220713 14:05:37.051"/>
+<msg timestamp="20230531 15:24:48.094" level="INFO">${id} = [400]</msg>
+<status status="PASS" starttime="20230531 15:24:48.093" endtime="20230531 15:24:48.094"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
-<arg>${StrinfResCode}</arg>
-<arg>${Status_code}</arg>
+<arg>${id}</arg>
+<arg>[200]</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20220713 14:05:37.051" endtime="20220713 14:05:37.052"/>
+<msg timestamp="20230531 15:24:48.094" level="FAIL">[400] != [200]</msg>
+<status status="FAIL" starttime="20230531 15:24:48.094" endtime="20230531 15:24:48.094"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>${response.content}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220713 14:05:37.053" level="INFO">{"statusCode":401,"message":"Unauthorize Access","result":[null,"\r\nRelease Branch MyAccess: main\r\nRelease Date MyAccess: 2022-06-24\r\n"]}</msg>
-<status status="PASS" starttime="20220713 14:05:37.052" endtime="20220713 14:05:37.054"/>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>${message}</var>
+<arg>${JsonObj}</arg>
+<arg>$.message</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="NOT RUN" starttime="20230531 15:24:48.094" endtime="20230531 15:24:48.094"/>
 </kw>
-<status status="PASS" starttime="20220713 14:05:35.860" endtime="20220713 14:05:37.054"/>
+<for flavor="IN">
+<var>${P}</var>
+<value>@{response.cookies}</value>
+<iter>
+<var name="${P}"/>
+<kw name="Write Data" library="excel_1">
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>10</arg>
+<arg>${P.value}</arg>
+<status status="NOT RUN" starttime="20230531 15:24:48.095" endtime="20230531 15:24:48.095"/>
 </kw>
-<status status="PASS" starttime="20220713 14:05:35.858" endtime="20220713 14:05:37.060"/>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:48.095" endtime="20230531 15:24:48.095"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:48.095" endtime="20230531 15:24:48.095"/>
+</iter>
+<status status="NOT RUN" starttime="20230531 15:24:48.095" endtime="20230531 15:24:48.095"/>
+</for>
+<status status="FAIL" starttime="20230531 15:24:46.497" endtime="20230531 15:24:48.095"/>
+</kw>
+<status status="FAIL" starttime="20230531 15:24:46.496" endtime="20230531 15:24:48.096">Setup failed:
+[400] != [200]</status>
 </test>
-<test id="s1-t2" name="TC001_Get_Request_forPreLogin using https://uat-myaccess.stevensonsystems.com" line="13">
-<kw name="Mykeywork">
-<arg>https://uat-myaccess.stevensonsystems.com</arg>
-<arg>/api/LaunchDarkly/ReportUpdatesFeature</arg>
-<arg>200</arg>
-<arg>200</arg>
+<test id="s1-t2" name="Property Add Property" line="18">
+<kw name="I Create Post Request For Login And Verify Response" library="Resource" type="SETUP">
+<arg>User</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${role}</var>
+<arg>${AccountRole}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230531 15:24:48.100" level="INFO">${role} = User</msg>
+<status status="PASS" starttime="20230531 15:24:48.100" endtime="20230531 15:24:48.100"/>
+</kw>
+<kw name="get API Values" library="Resource">
+<kw name="Get Cell Value" library="excel_1">
+<var>${API_Base_Endpoint}</var>
+<arg>${dataFile}</arg>
+<arg>${API_Base_Endpoint_Sheet}</arg>
+<arg>2</arg>
+<arg>1</arg>
+<msg timestamp="20230531 15:24:48.178" level="INFO">${API_Base_Endpoint} = https://qa.truspace.com</msg>
+<status status="PASS" starttime="20230531 15:24:48.101" endtime="20230531 15:24:48.178"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${API_Base_Endpoint}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230531 15:24:48.179" level="INFO">${API_Base_Endpoint} = https://qa.truspace.com</msg>
+<status status="PASS" starttime="20230531 15:24:48.179" endtime="20230531 15:24:48.179"/>
+</kw>
+<status status="PASS" starttime="20230531 15:24:48.100" endtime="20230531 15:24:48.179"/>
+</kw>
+<kw name="Get Cell Value" library="excel_1">
+<var>${End_Points}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>2</arg>
+<msg timestamp="20230531 15:24:48.248" level="INFO">${End_Points} = /api/account/login</msg>
+<status status="PASS" starttime="20230531 15:24:48.180" endtime="20230531 15:24:48.248"/>
+</kw>
+<if>
+<branch type="IF" condition="'${role}'=='Company Manager'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>11</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:48.248" endtime="20230531 15:24:48.248"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:48.248" endtime="20230531 15:24:48.248"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='SSIEmployee'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>12</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:48.249" endtime="20230531 15:24:48.249"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:48.248" endtime="20230531 15:24:48.249"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='SSI'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>7</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:48.250" endtime="20230531 15:24:48.250"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:48.249" endtime="20230531 15:24:48.250"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='Company Admin'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>10</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:48.250" endtime="20230531 15:24:48.250"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:48.250" endtime="20230531 15:24:48.250"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='User'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>9</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230531 15:24:48.251" level="INFO">${row} = 9</msg>
+<status status="PASS" starttime="20230531 15:24:48.250" endtime="20230531 15:24:48.251"/>
+</kw>
+<status status="PASS" starttime="20230531 15:24:48.250" endtime="20230531 15:24:48.251"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='Limited User'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>8</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:48.251" endtime="20230531 15:24:48.251"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:48.251" endtime="20230531 15:24:48.251"/>
+</branch>
+<status status="PASS" starttime="20230531 15:24:48.248" endtime="20230531 15:24:48.251"/>
+</if>
+<kw name="Get Cell Value" library="excel_1">
+<var>${Username}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>${row}</arg>
+<arg>3</arg>
+<msg timestamp="20230531 15:24:48.327" level="INFO">${Username} = pore.priti@gmail.com</msg>
+<status status="PASS" starttime="20230531 15:24:48.251" endtime="20230531 15:24:48.327"/>
+</kw>
+<kw name="Get Cell Value" library="excel_1">
+<var>${Password}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<msg timestamp="20230531 15:24:48.410" level="INFO">${Password} = userPassword@1</msg>
+<status status="PASS" starttime="20230531 15:24:48.327" endtime="20230531 15:24:48.410"/>
+</kw>
+<kw name="Encode My Data" library="excel_1">
+<var>${Username}</var>
+<arg>${Username}</arg>
+<msg timestamp="20230531 15:24:48.410" level="INFO">${Username} = cG9yZS5wcml0aUBnbWFpbC5jb20=</msg>
+<status status="PASS" starttime="20230531 15:24:48.410" endtime="20230531 15:24:48.410"/>
+</kw>
+<kw name="Encode My Data" library="excel_1">
+<var>${Password}</var>
+<arg>${Password}</arg>
+<msg timestamp="20230531 15:24:48.411" level="INFO">${Password} = dXNlclBhc3N3b3JkQDE=</msg>
+<status status="PASS" starttime="20230531 15:24:48.411" endtime="20230531 15:24:48.411"/>
+</kw>
+<kw name="Get Cell Value" library="excel_1">
+<var>${ExpectedStatus_code}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>7</arg>
+<msg timestamp="20230531 15:24:48.480" level="INFO">${ExpectedStatus_code} = ZavantiAdmin@stevensonsystems.com</msg>
+<status status="PASS" starttime="20230531 15:24:48.411" endtime="20230531 15:24:48.480"/>
+</kw>
 <kw name="Create Session" library="RequestsLibrary">
 <arg>API_Testing</arg>
 <arg>${API_Base_Endpoint}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220713 14:05:37.077" level="INFO">Creating Session using : alias=API_Testing, url=https://uat-myaccess.stevensonsystems.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20220713 14:05:37.075" endtime="20220713 14:05:37.078"/>
+<msg timestamp="20230531 15:24:48.481" level="INFO">Creating Session using : alias=API_Testing, url=https://qa.truspace.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230531 15:24:48.480" endtime="20230531 15:24:48.482"/>
 </kw>
-<kw name="GET On Session" library="RequestsLibrary">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${body}</var>
+<arg>Username=${Username}</arg>
+<arg>Password=${Password}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230531 15:24:48.483" level="INFO">${body} = {'Username': 'cG9yZS5wcml0aUBnbWFpbC5jb20=', 'Password': 'dXNlclBhc3N3b3JkQDE='}</msg>
+<status status="PASS" starttime="20230531 15:24:48.482" endtime="20230531 15:24:48.483"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${header}</var>
+<arg>Content-type=application/json,</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230531 15:24:48.483" level="INFO">${header} = {'Content-type': 'application/json,'}</msg>
+<status status="PASS" starttime="20230531 15:24:48.483" endtime="20230531 15:24:48.483"/>
+</kw>
+<kw name="Post Request" library="RequestsLibrary">
 <var>${response}</var>
 <arg>API_Testing</arg>
 <arg>${End_Points}</arg>
-<doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20220713 14:05:38.626" level="INFO">GET Request : url=https://uat-myaccess.stevensonsystems.com/api/LaunchDarkly/ReportUpdatesFeature 
- path_url=/api/LaunchDarkly/ReportUpdatesFeature 
- headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
+<arg>data=${body}</arg>
+<arg>headers=${header}</arg>
+<doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
+<msg timestamp="20230531 15:24:48.484" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20230531 15:24:49.440" level="INFO">POST Request : url=https://qa.truspace.com/api/account/login 
+ path_url=/api/account/login 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-type': 'application/json,', 'Content-Length': '80'} 
+ body={"Username": "cG9yZS5wcml0aUBnbWFpbC5jb20=", "Password": "dXNlclBhc3N3b3JkQDE="} 
  </msg>
-<msg timestamp="20220713 14:05:38.626" level="INFO">GET Response : url=https://uat-myaccess.stevensonsystems.com/api/LaunchDarkly/ReportUpdatesFeature 
+<msg timestamp="20230531 15:24:49.440" level="INFO">POST Response : url=https://qa.truspace.com/api/account/login 
  status=200, reason=OK 
- headers={'Transfer-Encoding': 'chunked', 'Content-Type': 'application/json; charset=utf-8', 'Server': 'Kestrel', 'Strict-Transport-Security': 'max-age=2592000', 'X-Frame-Options': 'SAMEORIGIN', 'X-Powered-By': 'ASP.NET', 'Date': 'Wed, 13 Jul 2022 08:35:17 GMT'} 
- body=true 
+ headers={'Cache-Control': 'no-cache,no-store', 'Pragma': 'no-cache', 'Content-Length': '45', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'Strict-Transport-Security': 'max-age=2592000', 'Set-Cookie': '.AspNetCore.Session=CfDJ8C90wS%2Bbj%2FlLhJ5WBI2WDp0gLSGCRtoRPs52hC%2BOPk1xF5Gwlq%2F6Z%2FeCU5roWG0WR7OLaAaE3gMz9F60%2B6emqs3ieu96Nru%2F9VtRg%2FB1UoLRLjvfRYYc4AZviWyriXtRItQ8UPKEooN7FiL%2BpAoXwChl6NaUTw3ddfK5LrwJEuX8; path=/; samesite=lax; httponly', 'X-Powered-By': 'ASP.NET', 'Date': 'Wed, 31 May 2023 09:54:42 GMT'} 
+ body={"statusCode":400,"message":"Invalid Login!"} 
  </msg>
-<msg timestamp="20220713 14:05:38.626" level="INFO">C:\STS_API_Automation\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'uat-myaccess.stevensonsystems.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20230531 15:24:49.440" level="INFO">c:\pythonproject\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'qa.truspace.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220713 14:05:38.627" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220713 14:05:37.078" endtime="20220713 14:05:38.627"/>
+<msg timestamp="20230531 15:24:49.440" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230531 15:24:48.484" endtime="20230531 15:24:49.440"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${response.status_code}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220713 14:05:38.628" endtime="20220713 14:05:38.638"/>
+<kw name="To Json" library="RequestsLibrary">
+<var>${JsonObj}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<msg timestamp="20230531 15:24:49.441" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg timestamp="20230531 15:24:49.443" level="INFO">To JSON using : content={"statusCode":400,"message":"Invalid Login!"} </msg>
+<msg timestamp="20230531 15:24:49.443" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20230531 15:24:49.443" level="INFO">${JsonObj} = {'statusCode': 400, 'message': 'Invalid Login!'}</msg>
+<status status="PASS" starttime="20230531 15:24:49.441" endtime="20230531 15:24:49.443"/>
+</kw>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>${id}</var>
+<arg>${JsonObj}</arg>
+<arg>$.statusCode</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<msg timestamp="20230531 15:24:49.481" level="INFO">${id} = [400]</msg>
+<status status="PASS" starttime="20230531 15:24:49.443" endtime="20230531 15:24:49.481"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
-<var>${StrinfResCode}</var>
-<arg>${response.status_code}</arg>
+<var>${id}</var>
+<arg>${id}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220713 14:05:38.643" level="INFO">${StrinfResCode} = 200</msg>
-<status status="PASS" starttime="20220713 14:05:38.640" endtime="20220713 14:05:38.643"/>
+<msg timestamp="20230531 15:24:49.482" level="INFO">${id} = [400]</msg>
+<status status="PASS" starttime="20230531 15:24:49.481" endtime="20230531 15:24:49.482"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
-<arg>${StrinfResCode}</arg>
-<arg>${Status_code}</arg>
+<arg>${id}</arg>
+<arg>[200]</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20220713 14:05:38.645" endtime="20220713 14:05:38.648"/>
+<msg timestamp="20230531 15:24:49.482" level="FAIL">[400] != [200]</msg>
+<status status="FAIL" starttime="20230531 15:24:49.482" endtime="20230531 15:24:49.483"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>${response.content}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220713 14:05:38.651" level="INFO">true</msg>
-<status status="PASS" starttime="20220713 14:05:38.648" endtime="20220713 14:05:38.652"/>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>${message}</var>
+<arg>${JsonObj}</arg>
+<arg>$.message</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="NOT RUN" starttime="20230531 15:24:49.483" endtime="20230531 15:24:49.483"/>
 </kw>
-<status status="PASS" starttime="20220713 14:05:37.072" endtime="20220713 14:05:38.652"/>
+<for flavor="IN">
+<var>${P}</var>
+<value>@{response.cookies}</value>
+<iter>
+<var name="${P}"/>
+<kw name="Write Data" library="excel_1">
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>10</arg>
+<arg>${P.value}</arg>
+<status status="NOT RUN" starttime="20230531 15:24:49.483" endtime="20230531 15:24:49.483"/>
 </kw>
-<status status="PASS" starttime="20220713 14:05:37.068" endtime="20220713 14:05:38.654"/>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:49.484" endtime="20230531 15:24:49.484"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:49.483" endtime="20230531 15:24:49.484"/>
+</iter>
+<status status="NOT RUN" starttime="20230531 15:24:49.483" endtime="20230531 15:24:49.484"/>
+</for>
+<status status="FAIL" starttime="20230531 15:24:48.099" endtime="20230531 15:24:49.484"/>
+</kw>
+<status status="FAIL" starttime="20230531 15:24:48.098" endtime="20230531 15:24:49.486">Setup failed:
+[400] != [200]</status>
 </test>
-<status status="PASS" starttime="20220713 14:05:33.350" endtime="20220713 14:05:38.662"/>
+<test id="s1-t3" name="Property Listing1" line="21">
+<kw name="I Create Post Request For Login And Verify Response" library="Resource" type="SETUP">
+<arg>User</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${role}</var>
+<arg>${AccountRole}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230531 15:24:49.490" level="INFO">${role} = User</msg>
+<status status="PASS" starttime="20230531 15:24:49.490" endtime="20230531 15:24:49.490"/>
+</kw>
+<kw name="get API Values" library="Resource">
+<kw name="Get Cell Value" library="excel_1">
+<var>${API_Base_Endpoint}</var>
+<arg>${dataFile}</arg>
+<arg>${API_Base_Endpoint_Sheet}</arg>
+<arg>2</arg>
+<arg>1</arg>
+<msg timestamp="20230531 15:24:49.556" level="INFO">${API_Base_Endpoint} = https://qa.truspace.com</msg>
+<status status="PASS" starttime="20230531 15:24:49.491" endtime="20230531 15:24:49.557"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${API_Base_Endpoint}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230531 15:24:49.557" level="INFO">${API_Base_Endpoint} = https://qa.truspace.com</msg>
+<status status="PASS" starttime="20230531 15:24:49.557" endtime="20230531 15:24:49.557"/>
+</kw>
+<status status="PASS" starttime="20230531 15:24:49.490" endtime="20230531 15:24:49.557"/>
+</kw>
+<kw name="Get Cell Value" library="excel_1">
+<var>${End_Points}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>2</arg>
+<msg timestamp="20230531 15:24:49.610" level="INFO">${End_Points} = /api/account/login</msg>
+<status status="PASS" starttime="20230531 15:24:49.558" endtime="20230531 15:24:49.610"/>
+</kw>
+<if>
+<branch type="IF" condition="'${role}'=='Company Manager'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>11</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:49.610" endtime="20230531 15:24:49.610"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:49.610" endtime="20230531 15:24:49.610"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='SSIEmployee'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>12</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:49.611" endtime="20230531 15:24:49.611"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:49.610" endtime="20230531 15:24:49.611"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='SSI'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>7</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:49.611" endtime="20230531 15:24:49.611"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:49.611" endtime="20230531 15:24:49.611"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='Company Admin'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>10</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:49.612" endtime="20230531 15:24:49.612"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:49.611" endtime="20230531 15:24:49.612"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='User'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>9</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230531 15:24:49.612" level="INFO">${row} = 9</msg>
+<status status="PASS" starttime="20230531 15:24:49.612" endtime="20230531 15:24:49.612"/>
+</kw>
+<status status="PASS" starttime="20230531 15:24:49.612" endtime="20230531 15:24:49.612"/>
+</branch>
+<branch type="ELSE IF" condition="'${role}'=='Limited User'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${row}</var>
+<arg>8</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:49.613" endtime="20230531 15:24:49.613"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:49.612" endtime="20230531 15:24:49.613"/>
+</branch>
+<status status="PASS" starttime="20230531 15:24:49.610" endtime="20230531 15:24:49.613"/>
+</if>
+<kw name="Get Cell Value" library="excel_1">
+<var>${Username}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>${row}</arg>
+<arg>3</arg>
+<msg timestamp="20230531 15:24:49.671" level="INFO">${Username} = pore.priti@gmail.com</msg>
+<status status="PASS" starttime="20230531 15:24:49.613" endtime="20230531 15:24:49.672"/>
+</kw>
+<kw name="Get Cell Value" library="excel_1">
+<var>${Password}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>${row}</arg>
+<arg>4</arg>
+<msg timestamp="20230531 15:24:49.727" level="INFO">${Password} = userPassword@1</msg>
+<status status="PASS" starttime="20230531 15:24:49.672" endtime="20230531 15:24:49.727"/>
+</kw>
+<kw name="Encode My Data" library="excel_1">
+<var>${Username}</var>
+<arg>${Username}</arg>
+<msg timestamp="20230531 15:24:49.727" level="INFO">${Username} = cG9yZS5wcml0aUBnbWFpbC5jb20=</msg>
+<status status="PASS" starttime="20230531 15:24:49.727" endtime="20230531 15:24:49.727"/>
+</kw>
+<kw name="Encode My Data" library="excel_1">
+<var>${Password}</var>
+<arg>${Password}</arg>
+<msg timestamp="20230531 15:24:49.728" level="INFO">${Password} = dXNlclBhc3N3b3JkQDE=</msg>
+<status status="PASS" starttime="20230531 15:24:49.727" endtime="20230531 15:24:49.728"/>
+</kw>
+<kw name="Get Cell Value" library="excel_1">
+<var>${ExpectedStatus_code}</var>
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>7</arg>
+<msg timestamp="20230531 15:24:49.777" level="INFO">${ExpectedStatus_code} = ZavantiAdmin@stevensonsystems.com</msg>
+<status status="PASS" starttime="20230531 15:24:49.728" endtime="20230531 15:24:49.777"/>
+</kw>
+<kw name="Create Session" library="RequestsLibrary">
+<arg>API_Testing</arg>
+<arg>${API_Base_Endpoint}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230531 15:24:49.777" level="INFO">Creating Session using : alias=API_Testing, url=https://qa.truspace.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230531 15:24:49.777" endtime="20230531 15:24:49.778"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${body}</var>
+<arg>Username=${Username}</arg>
+<arg>Password=${Password}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230531 15:24:49.778" level="INFO">${body} = {'Username': 'cG9yZS5wcml0aUBnbWFpbC5jb20=', 'Password': 'dXNlclBhc3N3b3JkQDE='}</msg>
+<status status="PASS" starttime="20230531 15:24:49.778" endtime="20230531 15:24:49.778"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${header}</var>
+<arg>Content-type=application/json,</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230531 15:24:49.779" level="INFO">${header} = {'Content-type': 'application/json,'}</msg>
+<status status="PASS" starttime="20230531 15:24:49.778" endtime="20230531 15:24:49.779"/>
+</kw>
+<kw name="Post Request" library="RequestsLibrary">
+<var>${response}</var>
+<arg>API_Testing</arg>
+<arg>${End_Points}</arg>
+<arg>data=${body}</arg>
+<arg>headers=${header}</arg>
+<doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
+<msg timestamp="20230531 15:24:49.779" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20230531 15:24:50.732" level="INFO">POST Request : url=https://qa.truspace.com/api/account/login 
+ path_url=/api/account/login 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-type': 'application/json,', 'Content-Length': '80'} 
+ body={"Username": "cG9yZS5wcml0aUBnbWFpbC5jb20=", "Password": "dXNlclBhc3N3b3JkQDE="} 
+ </msg>
+<msg timestamp="20230531 15:24:50.732" level="INFO">POST Response : url=https://qa.truspace.com/api/account/login 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache,no-store', 'Pragma': 'no-cache', 'Content-Length': '45', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'Strict-Transport-Security': 'max-age=2592000', 'Set-Cookie': '.AspNetCore.Session=CfDJ8C90wS%2Bbj%2FlLhJ5WBI2WDp1V3Zk%2Farbf4C%2FG2OLIiNrnuDEoO%2BOCHO3CRS1q7bOgFiZ23LuiA%2BUpax0z7yTfjbpSWcRHbEGGh7x3L3Lgyxh60Ub1VvRf5Ec9j8LZA%2Bw0DNzENTQPRo32rNFaQe3qO5%2Bz1uaCDais4npKDUQUfxod; path=/; samesite=lax; httponly', 'X-Powered-By': 'ASP.NET', 'Date': 'Wed, 31 May 2023 09:54:43 GMT'} 
+ body={"statusCode":400,"message":"Invalid Login!"} 
+ </msg>
+<msg timestamp="20230531 15:24:50.732" level="INFO">c:\pythonproject\venv\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'qa.truspace.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20230531 15:24:50.732" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230531 15:24:49.779" endtime="20230531 15:24:50.732"/>
+</kw>
+<kw name="To Json" library="RequestsLibrary">
+<var>${JsonObj}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<msg timestamp="20230531 15:24:50.733" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg timestamp="20230531 15:24:50.736" level="INFO">To JSON using : content={"statusCode":400,"message":"Invalid Login!"} </msg>
+<msg timestamp="20230531 15:24:50.736" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20230531 15:24:50.737" level="INFO">${JsonObj} = {'statusCode': 400, 'message': 'Invalid Login!'}</msg>
+<status status="PASS" starttime="20230531 15:24:50.733" endtime="20230531 15:24:50.737"/>
+</kw>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>${id}</var>
+<arg>${JsonObj}</arg>
+<arg>$.statusCode</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<msg timestamp="20230531 15:24:50.774" level="INFO">${id} = [400]</msg>
+<status status="PASS" starttime="20230531 15:24:50.737" endtime="20230531 15:24:50.774"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${id}</var>
+<arg>${id}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20230531 15:24:50.775" level="INFO">${id} = [400]</msg>
+<status status="PASS" starttime="20230531 15:24:50.775" endtime="20230531 15:24:50.775"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${id}</arg>
+<arg>[200]</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20230531 15:24:50.775" level="FAIL">[400] != [200]</msg>
+<status status="FAIL" starttime="20230531 15:24:50.775" endtime="20230531 15:24:50.776"/>
+</kw>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>${message}</var>
+<arg>${JsonObj}</arg>
+<arg>$.message</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="NOT RUN" starttime="20230531 15:24:50.776" endtime="20230531 15:24:50.776"/>
+</kw>
+<for flavor="IN">
+<var>${P}</var>
+<value>@{response.cookies}</value>
+<iter>
+<var name="${P}"/>
+<kw name="Write Data" library="excel_1">
+<arg>${dataFile}</arg>
+<arg>${datasheetLogin}</arg>
+<arg>2</arg>
+<arg>10</arg>
+<arg>${P.value}</arg>
+<status status="NOT RUN" starttime="20230531 15:24:50.776" endtime="20230531 15:24:50.776"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20230531 15:24:50.776" endtime="20230531 15:24:50.776"/>
+</kw>
+<status status="NOT RUN" starttime="20230531 15:24:50.776" endtime="20230531 15:24:50.776"/>
+</iter>
+<status status="NOT RUN" starttime="20230531 15:24:50.776" endtime="20230531 15:24:50.776"/>
+</for>
+<status status="FAIL" starttime="20230531 15:24:49.489" endtime="20230531 15:24:50.777"/>
+</kw>
+<status status="FAIL" starttime="20230531 15:24:49.489" endtime="20230531 15:24:50.777">Setup failed:
+[400] != [200]</status>
+</test>
+<doc>This Document include Automation script scenarios for Login of stevensons website through API</doc>
+<status status="FAIL" starttime="20230531 15:24:44.559" endtime="20230531 15:24:50.780"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="TC Prelogin">TC Prelogin</stat>
+<stat pass="0" fail="3" skip="0" id="s1" name="User">User</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220713 14:05:37.064" level="WARN">Multiple tests with name 'TC001_Get_Request_forPreLogin using https://uat-myaccess.stevensonsystems.com' executed in suite 'TC Prelogin'.</msg>
+<msg timestamp="20230531 15:24:46.493" level="ERROR">Error in file 'C:\STS_API_Automation\Global\Resource.robot' on line 11: Error in file 'C:\STS_API_Automation\testAPI.robot' on line 17: Resource file with 'Test Cases' section is invalid.</msg>
+<msg timestamp="20230531 15:24:46.764" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20230531 15:24:48.030" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg timestamp="20230531 15:24:48.484" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20230531 15:24:49.441" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg timestamp="20230531 15:24:49.779" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20230531 15:24:50.733" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
 </errors>
 </robot>
